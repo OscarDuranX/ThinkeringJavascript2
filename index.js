@@ -5,15 +5,19 @@
 // FRONTEND: Javascript
 
 // BACKEND: Object Notation: aka JSON
-var Person = [
+var Person =
     {
         'name'  : 'Oscar',
         'sn1'   : 'Duran',
         'age'   : '18'
-    },
-    {
-        'name'  : 'Salam',
-        'sn1'   : 'Malas',
-        'age'   : '18'
-    }
-];
+    };
+
+var myApp= {}
+
+myApp.name = 'Sergi';
+
+myApp.hello = function () {
+    console.log('Hola Mon!!!');
+}
+
+myApp.hello();
