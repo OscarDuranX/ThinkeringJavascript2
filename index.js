@@ -1,23 +1,23 @@
-// Namespaces
-// De moment no tenim class NOCLASE{ }
+// OOP : Object Oriented Programming
 
 
-// FRONTEND: Javascript
 
-// BACKEND: Object Notation: aka JSON
-var Person =
-    {
-        'name'  : 'Oscar',
-        'sn1'   : 'Duran',
-        'age'   : '18'
-    };
+// Object Literal Notation
+var person = {
+    name : 'Sergi',
 
-var myApp= {}
+    constructor: function () {
 
-myApp.name = 'Sergi';
+    },
 
-myApp.hello = function () {
-    console.log('Hola Mon!!!');
+    hello: function () {
+        console.log("Hola " + this.name);
+    },
+    bye: function () {
+        console.log("Adeww " + this.name);
+    },
 }
 
-myApp.hello();
+console.log(person.name);
+person.hello();
+person.bye();
