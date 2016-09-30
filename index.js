@@ -1,26 +1,12 @@
-// SCOPE : AMBIT -> ZONA del codi on una variable té vida/sentit
-// VARIABLE GLOBALS: LA PESTE / XOCS
+// Namespaces
+// De moment no tenim class NOCLASE{ }
 
-// RESUM  que no heu de fer
-//
-// var/let/const
-//
-//      $a = ""
-//
-// No fer variables globals!!
 
-function fire(boolea) {
+// FRONTEND: Javascript
 
-    var foo;
-
-    if(boolea){
-        var foo='bar';
-
-        console.log(foo);
-    }else{
-        console.log(foo);
-    }
-
-}
-
-fire(false);
+// BACKEND: Object Notation: aka JSON
+var Person = {
+    'name'  : 'Oscar',
+    'sn1'   : 'Duran',
+    'age'   : '18'
+};
