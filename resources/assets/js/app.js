@@ -21,21 +21,38 @@
 
 
 
+ https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Function/bind
+
  **/
 
 // "use strict";
 //
 // console.log(this);
+//
+// var showFullName =  function (sn2) {
+//     console.log(this.firstName + ' ' + this.sn1 + " " + arguments[0])
+// }
+//
+// var name = "oscar";
+//
+// var person = {
+//
+//     firstName : name,
+//     sn1  : "Tur",
+//     fullname: showFullName
+// };
+//
+// person.fullname();
+//
+// showFullName();
+//
+// var copiaShowFullName = showFullName.bind(person);
+//
+// copiaShowFullName();
+//
+// showFullName.call(person,'Badenaass');
+// showFullName.apply(person,['Badenaass']);
 
-    var showFullName =  function () {
-    console.log(this.firstName + ' ' + this.sn1)
-}
 
-var person = {
 
-    firstName : "Penelope",
-    sn1  : "Tur",
-    fullname: showFullName
-};
 
-person.fullname();
