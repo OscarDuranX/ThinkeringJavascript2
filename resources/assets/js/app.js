@@ -54,5 +54,12 @@
 // showFullName.apply(person,['Badenaass']);
 
 
+var Persona = function (name) {
+    this.name = name;
+    console.log("Creant un objecte");
+}
 
+var personeta = new Persona();
+
+console.log(personeta.name);
 
