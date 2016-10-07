@@ -52,14 +52,40 @@
 //
 // showFullName.call(person,'Badenaass');
 // showFullName.apply(person,['Badenaass']);
+//
+//
+// var Persona = function (name) {
+//     this.name = name;
+//     console.log("Creant un objecte");
+// }
+//
+// Persona.prototype.sayHello = function () {
+//     console.log('Hello ' + this.name);
+// }
+//
+// console.log(Persona);
+//
+// var personeta1 = new Persona('Oscar');
+// var personeta2 = new Persona('Loren');
+// var personeta3 = new Persona('Mipsum');
+//
+// console.log(personeta1.name);
+// console.log(personeta1.sayHello());
+// console.log(personeta2.name);
+// console.log(personeta2.sayHello());
+// console.log(personeta3.name);
+// console.log(personeta3.sayHello());
 
+var calculateArea = new function () {
+    console.log('Aqui es calcula el area pero es top secret');
+};
 
-var Persona = function (name) {
-    this.name = name;
-    console.log("Creant un objecte");
-}
+var Figure = function () {
+    // this.area = calculateArea;
+};
 
-var personeta = new Persona();
+Figure.prototype.area = calculateArea;
 
-console.log(personeta.name);
+var figura = new Figure();
 
+console.log(figura.area() );
